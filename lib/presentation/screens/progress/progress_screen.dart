@@ -59,13 +59,13 @@ class _ControlledProgressIndicator extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+            children: <Widget>[
               CircularProgressIndicator(
                 value: progressValue,
                 strokeWidth: 2,
                 backgroundColor: Colors.black12,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
               Expanded(

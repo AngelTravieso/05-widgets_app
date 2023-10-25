@@ -30,7 +30,9 @@ class ThemeNotifier extends StateNotifier<AppTheme> {
 
   // Esto me permite ver todo lo que exista (propiedades) de la clase (AppTheme)
 
-  void toggleDarkMode() {}
+  void toggleDarkMode() {
+    state = state.copyWith(isDarkMode: !state.isDarkMode);
+  }
 
   void changeColorIndex(int colorIndex) {}
 }
